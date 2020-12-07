@@ -1,0 +1,12 @@
+$dark-theme-colors: (
+  backgroundColor: purple,
+  textColor: #333,
+  primaryColor: #0F0,
+  secondaryColor: #F0F
+);
+
+@each $name, $color in $dark-theme-colors {
+  :export {
+    #{$name}: #{$color}
+  }
+}
